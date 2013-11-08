@@ -1,0 +1,5 @@
+<ul data-role="listview" data-inset="true">
+    <% _.each(movies, function(movie) { %>
+        <li><a href="#movies?<%=BackboneTest.Utils.htmlEncode(movie.get('title')) %>"><%= BackboneTest.Utils.htmlEncode(movie.get('title')) %></a></li>
+    <% }); %>
+</ul>
